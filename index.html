@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program za računanje aritmetičkih operacija</title>
+</head>
+<body>
+    <script>
+        
+       var broj1 = prompt("Unesie vrednost prvog broja: ");
+       var operacija = prompt("Unesite računarsku operaciju: ");
+       var broj2 = prompt("Unesite vrednost drugog broja: ");
+       
+        if(operacija == "+"){
+            result = parseInt(broj1) + parseInt(broj2)
+            alert("Vaš rezultat je: " + result)
+       } else if (operacija == "-"){
+            result =  parseInt(broj1) - parseInt(broj2)
+            alert("Vaš rezultat je: " + result)
+       } else if (operacija == "*"){
+            result = parseInt(broj1) * parseInt(broj2)
+            alert("Vaš rezultat je: " + result)
+       } else if (operacija == "/"){
+            result = parseInt(broj1) / parseInt(broj2)
+            alert("Vaš rezultat je: " + result)
+       } else {
+           alert("Unešeni karakter nije računarski operator!")
+       }
+    </script>
+</body>
+</html>
